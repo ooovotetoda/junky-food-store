@@ -21,7 +21,7 @@ async def start(message: types.Message):
         types.InlineKeyboardButton(text="Get order",
                                    web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/"))
         )
-    await message.answer(text="<b>Welcome to Junku Food store bot!</b>\n\n"
+    await message.answer(text="<b>Welcome to Junky Food store bot!</b>\n\n"
                               "Click the button below to order 🍕", reply_markup=kb)
 
 
@@ -32,7 +32,7 @@ async def start(message: types.Message):
         types.KeyboardButton(text="Get order",
                              web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/"))
         )
-    await message.answer(text="Click the button below to order 🍕")
+    await message.answer(text="Click the button below to order 🍕", reply_markup=kb)
 
 
 if __name__ == '__main__':
