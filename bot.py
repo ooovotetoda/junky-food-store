@@ -10,7 +10,7 @@ dp = Dispatcher(bot)
 async def set_default_commands(dp):
     await dp.bot.set_chat_menu_button(
         menu_button=types.MenuButtonWebApp(text="Get order",
-                                           web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/site/index.html"))
+                                           web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/"))
         )
 
 
