@@ -1,0 +1,16 @@
+.container {
+  width: 90%;
+  display: flex;
+}
+
+.red {
+  width: 40%;
+  height: auto;
+  background-color: red;
+}
+
+.green {
+  width: 40%;
+  height: auto;
+  background-color: green;
+}
