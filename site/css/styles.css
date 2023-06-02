@@ -1,16 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+}
+
+
+
 .container {
-  width: 90%;
-  display: flex;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
 }
 
 .red {
-  width: 40%;
-  height: auto;
-  background-color: red;
+    background-color: red;
 }
 
 .green {
-  width: 40%;
-  height: auto;
-  background-color: green;
+    background-color: green;
 }
