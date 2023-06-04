@@ -10,7 +10,7 @@ dp = Dispatcher(bot)
 async def set_default_commands(dp):
     await dp.bot.set_chat_menu_button(
         menu_button=types.MenuButtonWebApp(text="Get order",
-                                           web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/index.html"))
+                                           web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/site/index.html"))
         )
 
 
@@ -19,20 +19,20 @@ async def start(message: types.Message):
     kb = types.InlineKeyboardMarkup()
     kb.add(
         types.InlineKeyboardButton(text="Get order",
-                                   web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/index.html"))
+                                   web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/site/index.html"))
         )
     await message.answer(text="<b>Welcome to Junky Food store bot!</b>\n\n"
                               "Click the button below to order 🍕", reply_markup=kb)
 
 
-@dp.message_handler(commands=["reply"])
-async def start(message: types.Message):
-    kb = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    kb.add(
-        types.KeyboardButton(text="Get order",
-                             web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/index.html"))
-        )
-    await message.answer(text="Click the button below to order 🍕", reply_markup=kb)
+# @dp.message_handler(commands=["reply"])
+# async def start(message: types.Message):
+#     kb = types.ReplyKeyboardMarkup(resize_keyboard=True)
+#     kb.add(
+#         types.KeyboardButton(text="Get order",
+#                              web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/index.html"))
+#         )
+#     await message.answer(text="Click the button below to order 🍕", reply_markup=kb)
 
 
 if __name__ == '__main__':
