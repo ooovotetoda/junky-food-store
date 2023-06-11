@@ -1,0 +1,26 @@
+header {
+  padding: 25px;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 25%;
+
+}
+
+.nav-lk {
+  width: 48px;
+  height: 48px;
+}
