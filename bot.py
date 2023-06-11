@@ -25,13 +25,13 @@ async def start(message: types.Message):
                               "Click the button below to order some food!", reply_markup=kb)
 
 
-# @dp.message_handler(commands=["reply"])
-# async def start(message: types.Message):
-#     kb = types.ReplyKeyboardMarkup(resize_keyboard=True)
-#     kb.add(
-#         types.KeyboardButton(text="Get order",
-#                              web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/index.html")))
-#     await message.answer(text="Click the button below to order 🍕", reply_markup=kb)
+@dp.message_handler(commands=["reply"])
+async def start(message: types.Message):
+    kb = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    kb.add(
+        types.KeyboardButton(text="Get order",
+                             web_app=WebAppInfo(url="https://ooovotetoda.github.io/junky-food-store/site/index.html")))
+    await message.answer(text="Click the button below to order 🍕", reply_markup=kb)
 
 
 if __name__ == '__main__':
