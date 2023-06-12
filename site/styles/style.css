@@ -114,11 +114,11 @@ header {
 }
 
 .wrapper i:first-child {
-  left: -10px;
+  left: -7px;
 }
 
 .wrapper i:last-child {
-  right: -10px;
+  right: -7px;
 }
 
 .wrapper .carousel {
