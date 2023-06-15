@@ -44,47 +44,26 @@ header {
 
 .table {
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
   border-radius: 10px;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .about {
   flex: 1 1 50px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 17px 30px 30px 15px;
 }
 
 .partners {
   flex: 1 1 50px;
-  padding: 20px;
+  padding: 17px 30px 30px 15px;
 }
 
 .cases {
   margin: 25px 0;
   text-align: center;
-}
-
-.cases-title {
-  margin-bottom: 25px;
-}
-.cases-more {
-  margin-top: 25px;
-  background-color: #8B53FF;
-  color: #fff;
-  outline: none;
-  padding: 20px 35px;
-  border-radius: 8px;
-  border: none;
-  font-weight: 700;
-  font-size: 1.16rem;
-  transition: all 0.2s;
-}
-.cases-more:active {
-  border: 3px solid #8B53FF;
-  background-color: #fff;
-  color: #8B53FF;
 }
 
 .wrapper {
@@ -114,11 +93,11 @@ header {
 }
 
 .wrapper i:first-child {
-  left: -12px;
+  left: -14px;
 }
 
 .wrapper i:last-child {
-  right: -12px;
+  right: -14px;
 }
 
 .wrapper .carousel {
@@ -159,7 +138,7 @@ header {
 
 .carousel .card {
   scroll-snap-align: start;
-  height: 342px;
+  height: 300px;
   list-style: none;
   background: #fff;
   cursor: pointer;
@@ -179,7 +158,6 @@ header {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  object-fit: cover;
   border: 4px solid #fff;
 }
 
@@ -192,6 +170,27 @@ header {
 .carousel .card span {
   color: #6A6D78;
   font-size: 1.31rem;
+}
+
+.cases-title {
+  margin-bottom: 25px;
+}
+.cases-more {
+  margin-top: 25px;
+  background-color: #8B53FF;
+  color: #fff;
+  outline: none;
+  padding: 20px 35px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.16rem;
+  transition: all 0.2s;
+}
+.cases-more:active {
+  border: 3px solid #8B53FF;
+  background-color: #fff;
+  color: #8B53FF;
 }
 
 @media screen and (max-width: 900px) {
